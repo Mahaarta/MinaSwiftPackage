@@ -17,6 +17,9 @@ final public class MinaPackView: UIView {
     
     public override func awakeFromNib() {
         //initWithNib()
+        
+        setupLayout()
+        print("AHAHA")
     }
     
     public func initWithNib() {
