@@ -8,25 +8,25 @@
 import Foundation
 import UIKit
 
-final class MinaPackView: UIView {
+final public class MinaPackView: UIView {
     
     private static let NIB_NAME = "MinaPackView"
     
     @IBOutlet var view: UIView!
     @IBOutlet weak var mainContainer: UIView!
     
-    override func awakeFromNib() {
+    public override func awakeFromNib() {
         initWithNib()
     }
     
-    private func initWithNib() {
+    public func initWithNib() {
         Bundle.main.loadNibNamed(MinaPackView.NIB_NAME, owner: self, options: nil)
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         setupLayout()
     }
     
-    private func setupLayout() {
+    public func setupLayout() {
         NSLayoutConstraint.activate([
             view.topAnchor.constraint(equalTo: topAnchor),
             view.leadingAnchor.constraint(equalTo: leadingAnchor),
