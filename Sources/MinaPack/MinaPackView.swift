@@ -16,13 +16,11 @@ final public class MinaPackView: UIView {
     @IBOutlet weak var mainContainer: UIView!
     
     public override func awakeFromNib() {
-        //initWithNib()
-        
-        print("AHAHA \(Bundle.module)")
+        initWithNib()
     }
     
     public func initWithNib() {
-        //Bundle.main.loadNibNamed(MinaPackView.NIB_NAME, owner: self, options: nil)
+        Bundle.module.loadNibNamed(String(describing: type(of: self)), owner: self, options: nil)
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         setupLayout()
