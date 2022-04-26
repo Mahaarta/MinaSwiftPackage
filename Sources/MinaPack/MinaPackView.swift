@@ -12,6 +12,7 @@ final class MinaPackView: UIView {
     
     private static let NIB_NAME = "MinaPackView"
     
+    @IBOutlet var view: UIView!
     @IBOutlet weak var mainContainer: UIView!
     
     override func awakeFromNib() {
@@ -20,23 +21,23 @@ final class MinaPackView: UIView {
     
     private func initWithNib() {
         Bundle.main.loadNibNamed(MinaPackView.NIB_NAME, owner: self, options: nil)
-        mainContainer.translatesAutoresizingMaskIntoConstraints = false
-        addSubview(mainContainer)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(view)
         setupLayout()
     }
     
     private func setupLayout() {
         NSLayoutConstraint.activate([
-            mainContainer.topAnchor.constraint(equalTo: topAnchor),
-            mainContainer.leadingAnchor.constraint(equalTo: leadingAnchor),
-            mainContainer.bottomAnchor.constraint(equalTo: bottomAnchor),
-            mainContainer.trailingAnchor.constraint(equalTo: trailingAnchor),
+            view.topAnchor.constraint(equalTo: topAnchor),
+            view.leadingAnchor.constraint(equalTo: leadingAnchor),
+            view.bottomAnchor.constraint(equalTo: bottomAnchor),
+            view.trailingAnchor.constraint(equalTo: trailingAnchor),
         ])
     }
     
-    var viewBackgroundColor: UIColor = UIColor.red {
+    var viewBackgroundColor: UIColor = UIColor.primaryColor {
         didSet {
-            mainContainer.backgroundColor = viewBackgroundColor
+            view.backgroundColor = viewBackgroundColor
         }
     }
 }
