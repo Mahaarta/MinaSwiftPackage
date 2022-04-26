@@ -11,37 +11,39 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MinaPackView" customModule="MinaPack">
             <connections>
-                <outlet property="mainContainer" destination="2dt-Hr-OE2" id="9Zw-t9-jjp"/>
-                <outlet property="view" destination="iN0-l3-epB" id="FXM-hV-8JV"/>
+                <outlet property="mainContainer" destination="vhD-Gr-80p" id="Wvd-5g-Scl"/>
+                <outlet property="view" destination="iN0-l3-epB" id="AuO-4P-pYG"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view contentMode="scaleToFill" restorationIdentifier="MinaPackView2" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2dt-Hr-OE2">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                    <color key="backgroundColor" systemColor="tintColor"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vhD-Gr-80p">
+                    <rect key="frame" x="0.0" y="44" width="414" height="200"/>
+                    <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="tMT-ej-m6i"/>
+                    </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="2dt-Hr-OE2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="huR-XE-P9E"/>
-                <constraint firstItem="2dt-Hr-OE2" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="m17-Rb-9Jh"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="2dt-Hr-OE2" secondAttribute="bottom" id="rpr-9B-UNK"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="2dt-Hr-OE2" secondAttribute="trailing" id="wQA-VT-5yH"/>
+                <constraint firstItem="vhD-Gr-80p" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="KHu-LZ-gcC"/>
+                <constraint firstItem="vhD-Gr-80p" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="RlX-1O-889"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="vhD-Gr-80p" secondAttribute="trailing" id="mrT-2v-3FV"/>
             </constraints>
-            <point key="canvasLocation" x="139" y="114"/>
+            <point key="canvasLocation" x="139" y="71"/>
         </view>
     </objects>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
