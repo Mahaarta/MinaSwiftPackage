@@ -18,7 +18,7 @@ final public class MinaPackView: UIView {
     public override func awakeFromNib() {
         //initWithNib()
         
-        print("AHAHA")
+        print("AHAHA \(Bundle.module)")
     }
     
     public func initWithNib() {
