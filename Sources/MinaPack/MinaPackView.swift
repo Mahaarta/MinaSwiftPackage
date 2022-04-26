@@ -35,7 +35,7 @@ final class MinaPackView: UIView {
         ])
     }
     
-    var viewBackgroundColor: UIColor = UIColor.primaryColor {
+    var viewBackgroundColor: UIColor = UIColor.red {
         didSet {
             view.backgroundColor = viewBackgroundColor
         }
