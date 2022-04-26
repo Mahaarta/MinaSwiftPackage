@@ -22,7 +22,9 @@ let package = Package(
         .target(
             name: "MinaPack",
             dependencies: [],
-            path: "Sources"),
+            resources: [
+                .copy("MinaPackView")
+            ]),
         .testTarget(
             name: "MinaPackTests",
             dependencies: ["MinaPack"]),
