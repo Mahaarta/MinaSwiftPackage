@@ -10,17 +10,17 @@ import UIKit
 
 final public class MinaPackView: UIView {
     
-    private static let NIB_NAME = "MinaPackView"
+    //private static let NIB_NAME = "MinaPackView"
     
     @IBOutlet var view: UIView!
     @IBOutlet weak var mainContainer: UIView!
     
     public override func awakeFromNib() {
-        initWithNib()
+        //initWithNib()
     }
     
     public func initWithNib() {
-        Bundle.main.loadNibNamed(MinaPackView.NIB_NAME, owner: self, options: nil)
+        //Bundle.main.loadNibNamed(MinaPackView.NIB_NAME, owner: self, options: nil)
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         setupLayout()
