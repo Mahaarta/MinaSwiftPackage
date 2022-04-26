@@ -10,7 +10,7 @@ import UIKit
 
 final public class MinaPackView: UIView {
     
-    private static let NIB_NAME = "MinaPackView"
+    private static let NIB_NAME = "MinaPackView2"
     
     @IBOutlet var view: UIView!
     @IBOutlet weak var mainContainer: UIView!
